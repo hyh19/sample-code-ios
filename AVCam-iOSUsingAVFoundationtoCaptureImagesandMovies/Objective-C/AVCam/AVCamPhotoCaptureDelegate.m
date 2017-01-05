@@ -100,7 +100,7 @@
 		[self didFinish];
 		return;
 	}
-	
+	// bookmark
 	[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 		if ( status == PHAuthorizationStatusAuthorized ) {
 			[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
